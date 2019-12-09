@@ -9,11 +9,6 @@ var mongoose = require('mongoose');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 
-var buyer = require('./routes/buyer');
-var owner = require('./routes/owner');
-var restaurant = require('./routes/restaurant');
-var upload = require('./routes/upload');
-
 //use cors to allow cross origin resource sharing
 app.use(cors({ origin: `${frontendURL}`, credentials: true }));
 app.use(cookieParser());
@@ -49,10 +44,6 @@ connectDB();
 app.use(passport.initialize());
 require("./config/passport")(passport);
 
-app.use('/buyer', buyer);
-app.use('/owner', owner);
-app.use('/upload', upload);
-app.use('/restaurant', restaurant);
 app.use('/graphql', graphqlHTTP({
   schema,
   graphiql: true
