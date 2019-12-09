@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "grubhub backend app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "devserver": "./node_modules/nodemon/bin/nodemon.js index.js"
+  },
+  "author": "Wamique",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "express-session": "^1.16.2",
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.1",
+    "mongoose": "^5.7.5",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7"
+  }
+}
